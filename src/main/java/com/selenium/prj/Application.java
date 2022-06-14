@@ -13,15 +13,15 @@ public class Application {
 	public static WebDriver driver;
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
-		/*WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();
 		//C:\Apps
 		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		String url="https://www.google.com";
-		driver.get(url);*/
+		driver.get(url);
 		
-		System.setProperty("webdriver.chrome.driver","C://apps//chromedriver.exe");
+	/*	System.setProperty("webdriver.chrome.driver","C://apps//chromedriver.exe");
 
 		//Create Chrome Browser Driver
 
@@ -29,7 +29,7 @@ public class Application {
 
 		driver.manage().window().maximize();
 
-		driver.get("https://www.google.com");
+		driver.get("https://www.google.com");*/
 	}
 
 }
