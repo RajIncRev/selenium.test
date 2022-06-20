@@ -13,6 +13,8 @@ jobs:
         with:
           java-version: '8'
           distribution: 'adopt'
+          server-username: RajIncRev  # env variable name for username
+          server-password: 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
       - run: mvn -Dmaven.test.skip=true clean compile package -Pgithub deploy
       - run: mkdir staging && cp target/*.jar staging
       - uses: actions/upload-artifact@v3

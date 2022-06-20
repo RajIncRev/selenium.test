@@ -57,7 +57,7 @@
 	   <repository>
 	     <id>selenium</id>
 	     <name>GitHub OWNER Apache Maven Packages</name>
-	     <url>https://maven.pkg.github.com/OWNER/REPOSITORY</url>
+	     <url>https://maven.pkg.github.com/RajIncRev/selenium.test</url>
 	   </repository>
 	</distributionManagement>
 
