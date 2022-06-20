@@ -13,11 +13,10 @@ jobs:
         with:
           java-version: '8'
           distribution: 'adopt'
-      - name: Build with Maven
-        - run: mvn -Dmaven.test.skip=true clean compile package -Pgithub deploy
-        - run: mkdir staging && cp target/*.jar staging
-        - uses: actions/upload-artifact@v3
-          with:
-            name: Package
-            path: staging
+      - run: mvn -Dmaven.test.skip=true clean compile package -Pgithub deploy
+      - run: mkdir staging && cp target/*.jar staging
+      - uses: actions/upload-artifact@v3
+        with:
+          name: Package
+          path: staging
           
